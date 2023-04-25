@@ -1,0 +1,285 @@
+@import 'viewports.scss'
+@import 'properties.sass'   
+
+.hero-section-wrapper
+    position: absolute
+    top: 0
+    left: 0
+    width: 100vw
+    height: 100vh
+
+.logotype-container
+    width: 920px
+    height: 52px
+    position: absolute
+    overflow: auto
+    margin: auto
+    left: 0
+    top: 75px
+    right: 0
+
+    @include media(">=1930px")
+        width: calc(920px * 2 )
+        height: calc( 52px * 3 )
+
+    @include media("<=1366px")
+        width: calc(920px / 1.5 )
+
+    @include media("<=430px")
+        width: calc( 920px / 3  )
+        
+
+    #logo   
+        transform: scale(0.8)
+        position: absolute
+        left: -20px
+
+        @include media("<=430px")
+            position: absolute
+            margin: auto
+            left: 0
+            right: 0
+            top: 0
+            bottom: 0
+    
+        @include media(">=1930px")
+            transform: scale(2)
+            left: 98px
+            top: 60px
+
+.hero-section-middle
+    position: absolute
+    width: 920px
+    height: 955px
+    overflow: auto
+    margin: auto
+    top: 0
+    left: 0 
+    bottom: 0 
+    right: 0
+
+    overflow: hidden
+
+    @include media("<=1366px")
+        width: calc(920px / 1.5 )
+        height: calc( 955px / 1.5 )
+
+    @include media("<=430px")
+        width: calc(920px / 3 )
+        height: calc( 955px / 1.5 )
+
+    @include media(">=1930px")
+        width: calc(920px * 2 )
+        height: calc( 955px * 2)
+
+    #hero-text
+        position: absolute
+        width: 650px
+        height: 145px
+
+        top: 302px
+
+        font-style: normal
+        font-weight: 700
+        font-size: 40px
+        line-height: 48px
+
+
+        @include media("<=1366px")
+            width: calc( 650px / 1.5  )   
+            top: calc( 302px / 1.5  )
+
+            font-size: calc( 40px / 1.5 )
+            line-height: calc( 48px / 1.5 )
+
+        @include media("<=430px")
+            width: calc( 650px / 2.5  )   
+            top: calc( 302px / 3  )
+
+            text-align: center
+            margin: auto
+
+            top: 100px
+            left: 0
+            right: 0
+            bottom: 0
+
+            font-size: 15px
+            line-height: 20px
+
+        @include media(">=1930px")
+            width: 1263px
+            height: calc(145px * 5)
+
+            font-size: calc( 20px * 4 )
+            line-height: calc( 20px * 5 )
+
+            top: calc( 302px * 2 )
+
+    #hero-paragraph-01
+        position: absolute
+        width: 635px
+        height: 73px
+
+        top: 485px
+
+        font-style: normal
+        font-weight: 400
+        font-size: 20px
+        line-height: 120%
+
+        /* or 24px */
+        letter-spacing: 0.1em
+
+        @include media("<=1366px")
+            width: calc( 635px / 1.5  )   
+            top: calc( 485px / 1.5  )
+
+            font-size: calc( 20px / 1.5 )
+            line-height: calc( 24px / 1.5 )
+
+        @include media("<=430px")
+            width: calc( 635px / 3  )   
+            top: 176px
+
+            font-size: calc( 20px / 2 )
+            line-height: calc( 24px / 2 )
+
+            text-align: center
+            margin: auto
+            left: 0
+            right: 0
+            bottom: 0
+
+        @include media(">=1930px")
+            width: 1263px
+            height: calc(145px * 5)
+
+            font-size: calc( 20px * 2 )
+            line-height: calc( 20px * 2.5 )
+
+            top: 970px
+
+    .btn-hero-learn-more
+        position: absolute
+        width: 174px
+        height: 50px
+        top: 630px
+
+        border: 1px solid #232121
+        border-radius: 4px
+
+        font-family: $primary-font
+        font-style: normal
+        font-weight: 900
+        font-size: 20px
+        line-height: 120%
+        letter-spacing: 0.1em
+
+        @include media("<=1366px")
+            width: calc( 174px / 1.5 )
+            height: calc( 50px / 1.5 )   
+            top: calc( 630px / 1.5  )
+
+            font-size: calc( 20px / 1.5 )
+            line-height: calc( 24px / 1.5 )
+            
+        @include media("<=430px")
+            width: calc( 174px / 2 )
+            height: calc( 50px / 2 )   
+            
+            font-size: calc( 20px / 2 )
+            line-height: calc( 24px / 2 )
+
+
+            text-align: center
+            margin: auto
+            top: 294px
+            left: 0
+            right: 0
+            bottom: 0
+
+        @include media(">=1930px")
+            width: calc( 174px * 1.5 )
+            height: calc( 50px * 1.5 )
+
+            top: 1260px
+
+            font-size: calc( 20px * 1.5 )
+    #gif-bckd
+        position: absolute
+        width: 250px
+        height: 250px
+        top: 302px
+        left: 672px
+        overflow: hidden
+
+        background: rgba(255, 255, 255, 0.8)
+
+        /* Note: backdrop-filter has minimal browser support */
+        border-radius: 20px
+
+        @include media("<=1366px")
+            width: calc( 250px / 1.5 )
+            height: calc( 250px / 1.5 )
+            top: calc( 302px / 1.5 )
+            left: calc( 672px / 1.5 )
+
+            border-radius: calc( 20px / 1.5 )
+
+        @include media("<=430px")
+            width: calc( 250px / 3 )
+            height: calc( 250px / 3 )
+            top: -300px
+            
+
+            border-radius: calc( 20px / 3 )
+
+        @include media(">=1930px")
+            width: calc( 250px * 2 )
+            height: calc( 250px * 2 )
+            top: calc( 302px * 2 )
+            left: calc( 672px * 2 )
+
+            border-radius: calc( 20px * 2 )
+
+    #gif-deco
+        position: absolute
+        width: 250px
+        height: 250px
+        top: 302px
+        left: 672px
+
+        border-radius: 20px
+        opacity: 0.12
+        overflow: hidden
+
+        @include media("<=1366px")
+            width: calc( 250px / 1.5 )
+            height: calc( 250px / 1.5 )
+            top: calc( 302px / 1.5 )
+            left: calc( 672px / 1.5 )
+
+            border-radius: calc( 20px / 1.5 )
+
+        @include media("<=430px")
+            width: calc( 250px / 3 )
+            height: calc( 250px / 3 )
+            top: calc( 302px / 3 )
+            
+
+            border-radius: calc( 20px / 3 )
+
+            margin: auto
+            top: -300px
+            left: 0
+            right: 0
+            bottom: 0
+
+        @include media(">=1930px")
+            width: calc( 250px * 2 )
+            height: calc( 250px * 2 )
+            top: calc( 302px * 2 )
+            left: calc( 672px * 2 )
+
+            border-radius: calc( 20px * 2 )

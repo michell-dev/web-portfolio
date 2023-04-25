@@ -1,0 +1,312 @@
+/**
+*
+* Testing
+*
+**/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* FONTS *\ */
+/* COLOURS *\ */
+html {
+  scroll-behaviour: smooth;
+}
+
+body {
+  height: 100vh;
+  background: #E8E8E8;
+  font-family: "Inter", sans-serif;
+  color: #232121;
+}
+
+.hero-section-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.logotype-container {
+  width: 920px;
+  height: 52px;
+  position: absolute;
+  overflow: auto;
+  margin: auto;
+  left: 0;
+  top: 75px;
+  right: 0;
+}
+@media (min-width: 1930px) {
+  .logotype-container {
+    width: 1840px;
+    height: 156px;
+  }
+}
+@media (max-width: 1366px) {
+  .logotype-container {
+    width: 613.3333333333px;
+  }
+}
+@media (max-width: 430px) {
+  .logotype-container {
+    width: 306.6666666667px;
+  }
+}
+.logotype-container #logo {
+  transform: scale(0.8);
+  position: absolute;
+  left: -20px;
+}
+@media (max-width: 430px) {
+  .logotype-container #logo {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+}
+@media (min-width: 1930px) {
+  .logotype-container #logo {
+    transform: scale(2);
+    left: 98px;
+    top: 60px;
+  }
+}
+
+.hero-section-middle {
+  position: absolute;
+  width: 920px;
+  height: 955px;
+  overflow: auto;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+}
+@media (max-width: 1366px) {
+  .hero-section-middle {
+    width: 613.3333333333px;
+    height: 636.6666666667px;
+  }
+}
+@media (max-width: 430px) {
+  .hero-section-middle {
+    width: 306.6666666667px;
+    height: 636.6666666667px;
+  }
+}
+@media (min-width: 1930px) {
+  .hero-section-middle {
+    width: 1840px;
+    height: 1910px;
+  }
+}
+.hero-section-middle #hero-text {
+  position: absolute;
+  width: 650px;
+  height: 145px;
+  top: 302px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+}
+@media (max-width: 1366px) {
+  .hero-section-middle #hero-text {
+    width: 433.3333333333px;
+    top: 201.3333333333px;
+    font-size: 26.6666666667px;
+    line-height: 32px;
+  }
+}
+@media (max-width: 430px) {
+  .hero-section-middle #hero-text {
+    width: 260px;
+    top: 100.6666666667px;
+    text-align: center;
+    margin: auto;
+    top: 100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+@media (min-width: 1930px) {
+  .hero-section-middle #hero-text {
+    width: 1263px;
+    height: 725px;
+    font-size: 80px;
+    line-height: 100px;
+    top: 604px;
+  }
+}
+.hero-section-middle #hero-paragraph-01 {
+  position: absolute;
+  width: 635px;
+  height: 73px;
+  top: 485px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  /* or 24px */
+  letter-spacing: 0.1em;
+}
+@media (max-width: 1366px) {
+  .hero-section-middle #hero-paragraph-01 {
+    width: 423.3333333333px;
+    top: 323.3333333333px;
+    font-size: 13.3333333333px;
+    line-height: 16px;
+  }
+}
+@media (max-width: 430px) {
+  .hero-section-middle #hero-paragraph-01 {
+    width: 211.6666666667px;
+    top: 176px;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+@media (min-width: 1930px) {
+  .hero-section-middle #hero-paragraph-01 {
+    width: 1263px;
+    height: 725px;
+    font-size: 40px;
+    line-height: 50px;
+    top: 970px;
+  }
+}
+.hero-section-middle .btn-hero-learn-more {
+  position: absolute;
+  width: 174px;
+  height: 50px;
+  top: 630px;
+  border: 1px solid #232121;
+  border-radius: 4px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.1em;
+}
+@media (max-width: 1366px) {
+  .hero-section-middle .btn-hero-learn-more {
+    width: 116px;
+    height: 33.3333333333px;
+    top: 420px;
+    font-size: 13.3333333333px;
+    line-height: 16px;
+  }
+}
+@media (max-width: 430px) {
+  .hero-section-middle .btn-hero-learn-more {
+    width: 87px;
+    height: 25px;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    margin: auto;
+    top: 294px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+@media (min-width: 1930px) {
+  .hero-section-middle .btn-hero-learn-more {
+    width: 261px;
+    height: 75px;
+    top: 1260px;
+    font-size: 30px;
+  }
+}
+.hero-section-middle #gif-bckd {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  top: 302px;
+  left: 672px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.8);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 20px;
+}
+@media (max-width: 1366px) {
+  .hero-section-middle #gif-bckd {
+    width: 166.6666666667px;
+    height: 166.6666666667px;
+    top: 201.3333333333px;
+    left: 448px;
+    border-radius: 13.3333333333px;
+  }
+}
+@media (max-width: 430px) {
+  .hero-section-middle #gif-bckd {
+    width: 83.3333333333px;
+    height: 83.3333333333px;
+    top: -300px;
+    border-radius: 6.6666666667px;
+  }
+}
+@media (min-width: 1930px) {
+  .hero-section-middle #gif-bckd {
+    width: 500px;
+    height: 500px;
+    top: 604px;
+    left: 1344px;
+    border-radius: 40px;
+  }
+}
+.hero-section-middle #gif-deco {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  top: 302px;
+  left: 672px;
+  border-radius: 20px;
+  opacity: 0.12;
+  overflow: hidden;
+}
+@media (max-width: 1366px) {
+  .hero-section-middle #gif-deco {
+    width: 166.6666666667px;
+    height: 166.6666666667px;
+    top: 201.3333333333px;
+    left: 448px;
+    border-radius: 13.3333333333px;
+  }
+}
+@media (max-width: 430px) {
+  .hero-section-middle #gif-deco {
+    width: 83.3333333333px;
+    height: 83.3333333333px;
+    top: 100.6666666667px;
+    border-radius: 6.6666666667px;
+    margin: auto;
+    top: -300px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+@media (min-width: 1930px) {
+  .hero-section-middle #gif-deco {
+    width: 500px;
+    height: 500px;
+    top: 604px;
+    left: 1344px;
+    border-radius: 40px;
+  }
+}/*# sourceMappingURL=hero-section.css.map */

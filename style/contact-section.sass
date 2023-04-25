@@ -1,0 +1,357 @@
+@import 'viewports.scss'
+@import 'properties.sass'
+
+.contact-me-wrapper
+    position: absolute
+    display: inline-block
+    top: 4060px
+    left: 0
+    width: 100vw
+    height: 100vh
+
+    @include media("<=1366px")
+        top: 2760px
+
+    @include media(">=1930px")
+        top: 7600px
+
+    @include media("<=430px")
+        top: 1820px
+
+    .contact-content
+        position: absolute
+        width: 840px
+        height: 412px
+
+        left: 0
+        right: 0
+        bottom: 0
+        top: 0
+        margin: auto
+
+        @include media("<=1366px")
+            width: calc(840px / 1.5)
+            height: calc(412px / 1.5)
+
+        @include media(">=1930px")
+            width: calc(840px * 2)
+            height: calc(412px * 2)
+
+        @include media("<=430px")
+            width: calc(840px / 3)
+            height: calc(412px / 3)
+            text-align: center
+
+        #contact-me-hero-text
+            position: absolute
+            width: 414px
+            height: 67px
+
+            font-style: normal
+            font-weight: 700
+            font-size: 40px
+            line-height: 48px
+
+            @include media("<=1366px")
+                width: calc(414px / 1.5)
+                height: calc(67px / 1.5)
+
+                font-size: calc(40px / 1.5)
+                line-height: calc(48px / 1.5)
+
+            @include media(">=1930px")
+                width: calc(414px * 2)
+                height: calc(67px * 2)
+
+                font-size: calc(40px * 2)
+                line-height: calc(48px * 2)
+         
+        #contact-me-p-01
+            position: absolute
+            width: 393px
+            height: 78px
+            top: 85px
+
+            font-style: normal
+            font-weight: 400
+            font-size: 15px
+            line-height: 120%
+
+            /* or 18px */
+            letter-spacing: 0.1em
+
+            @include media("<=1366px")
+                width: calc(393px / 1.5)
+                height: calc(78px / 1.5)
+                top: calc(85px / 1.5)
+
+                font-size: calc( 15px / 1.5)
+
+                line-height: calc( 24px / 1.5)
+
+            @include media(">=1930px")
+                width: calc(393px * 2)
+                height: calc(78px * 2)
+                top: calc(85px * 2)
+
+                font-size: calc( 15px * 2)
+
+                line-height: calc( 24px * 2)
+
+        #contact-me-p-02
+            position: absolute
+            width: 393px
+            height: 78px
+            top: 186px
+
+            font-style: normal
+            font-weight: 400
+            font-size: 15px
+            line-height: 120%
+
+            /* or 18px */
+            letter-spacing: 0.1em
+
+            @include media("<=1366px")
+                width: calc(393px / 1.5)
+                height: calc(78px / 1.5)
+                top: calc(186px / 1.4)
+
+                font-size: calc( 15px / 1.5)
+                line-height: calc( 24px / 1.5)
+                
+            @include media(">=1930px")
+                width: calc(393px * 2)
+                height: calc(78px * 2)
+                top: calc(186px * 1.9)
+
+                font-size: calc( 15px * 2)
+                line-height: calc( 24px * 2)
+
+        .btn-say-hello
+            box-sizing: border-box
+            position: absolute
+            width: 174px
+            height: 50px
+            top: 284px
+
+            border: 1px solid #232121
+            border-radius: 4px
+
+            font-style: normal
+            font-weight: 900
+            font-size: 20px
+            line-height: 120%
+
+            /* or 24px */
+            letter-spacing: 0.1em
+
+            @include media("<=1366px")
+                width: calc(174px / 1.5)
+                height: calc(50px / 1.5)
+                top: calc(284px / 1.35)
+
+                border-radius: calc(4px / 1.5)
+
+                font-size: calc( 20px / 1.5)
+                line-height: calc( 24px / 1.5)
+
+            @include media(">=1930px")
+                width: calc(174px * 2)
+                height: calc(50px * 2)
+                top: calc(284px * 2)
+
+                border-radius: calc(4px * 2)
+
+                font-size: calc( 20px * 2)
+                line-height: calc( 24px * 2)
+
+            @include media("<=430px")
+                top: 250px
+                left: 0
+                right: 0
+                bottom: 0
+                margin: auto
+
+        #email-icon
+            position: absolute
+            width: 20px
+            height: 20px
+            top: 360px
+
+            @include media("<=1366px")
+                width: calc(20px / 1.5)
+                height: calc(20px / 1.5)
+                top: calc(360px  / 1.39)
+
+            @include media(">=1930px")       
+                width: calc(20px * 2)
+                height: calc(20px * 2)
+                top: calc(360px  * 2)
+
+            @include media("<=430px")
+                display: none
+
+        #email-text
+            position: absolute
+            width: 20px 
+            height: 20px
+            top: 360px
+            left: 30px
+
+            font-style: normal
+            font-weight: 400
+            font-size: 13.5px
+            line-height: 163.02%
+
+            /* or 22px */
+            letter-spacing: 0.13em
+
+            @include media("<=1366px")
+                width: calc(20px / 1.5)
+                height: calc(20px / 1.5)
+                top: calc(360px  / 1.4)
+                left: calc( 30px / 1.5)
+
+                font-size: 10px
+
+            @include media(">=1930px")
+                width: calc(20px * 2)
+                height: calc(20px * 2)
+                top: calc(360px  * 2)
+                left: calc( 30px * 2)
+
+                font-size: 30px
+
+            @include media("<=430px")
+                display: none
+
+        #gthb-icon
+            position: absolute
+            width: 20px
+            height: 20px
+            top: 400px
+
+            @include media("<=1366px")
+                width: calc(20px / 1.5)
+                height: calc(20px / 1.5)
+                top: calc(400px  / 1.39)
+
+            @include media(">=1930px")  
+                width: calc(20px * 2)
+                height: calc(20px * 2)
+                top: calc(400px  * 2)
+
+            @include media("<=430px")
+                display: none
+
+        #github-text
+            position: absolute
+            width: 20px 
+            height: 20px
+            top: 400px
+            left: 30px
+
+            font-style: normal
+            font-weight: 400
+            font-size: 13.5px
+            line-height: 163.02%
+
+            /* or 22px */
+            letter-spacing: 0.13em
+
+            @include media("<=1366px")
+                width: calc(20px / 1.5)
+                height: calc(20px / 1.5)
+                top: calc(400px  / 1.4)
+                left: calc( 30px / 1.5)
+
+                font-size: 10px
+
+            @include media(">=1930px")
+                width: calc(20px * 2)
+                height: calc(20px * 2)
+                top: calc(400px  * 2)
+                left: calc( 30px * 2)
+
+                font-size: 30px
+
+            @include media("<=430px")
+                display: none
+                
+    .contact-deco-right
+        position: absolute
+        width: 420px
+        height: 361px
+
+        top: 285px
+        left: 1020px
+
+        @include media("<=1366px")
+            width: calc(420px / 1.5)
+            height: calc(361px / 1.5)
+
+            top: calc(285px / 1.4)
+            left: calc(1020px / 1.5)
+
+        @include media(">=1930px")
+            width: calc(420px * 2)
+            height: calc(361px * 2)
+
+            top: calc(285px * 2)
+            left: calc(1020px * 2)
+
+        @include media("<=430px")
+            display: none
+
+
+        #phone-gif , #phone-bckd
+            z-index: 1
+            position: absolute
+            width: 250px
+            height: 250px
+            top: 111px
+            left: 170px
+
+            border-radius: 20px
+            opacity: 0.3
+
+            @include media("<=1366px")
+                width: calc(250px / 1.5)
+                height: calc(250px / 1.5)
+                top: calc(111px / 1.4)
+                left: calc(170px / 1.5)
+
+                border-radius: calc(20px / 1.5)
+
+            @include media(">=1930px")
+                width: calc(250px * 2)
+                height: calc(250px * 2)
+                top: calc(111px * 2)
+                left: calc(170px * 2)
+
+                border-radius: calc(20px * 2)
+
+        #phone-bckd
+            background: rgba(255, 255, 255, 0.05)
+            backdrop-filter: blur(22.5px)
+
+            /* Note: backdrop-filter has minimal browser support */
+            border-radius: 20px
+            transform: matrix(-1, 0, 0, 1, 0, 0)
+
+        #phone-deco
+            position: absolute
+            z-index: 0
+
+            @include media("<=1366px")
+                width: calc(280px * 2)
+                height: calc(240px * 2)
+                left: 10px
+                top: 25px
+
+            @include media(">=1930px")
+                width: calc(280px * 2)
+                height: calc(240px * 2)
+                left: 10px
+                top: 25px

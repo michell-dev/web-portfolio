@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* FONTS *\ */
+/* COLOURS *\ */
+html {
+  scroll-behaviour: smooth;
+}
+
+body {
+  height: 100vh;
+  background: #E8E8E8;
+  font-family: "Inter", sans-serif;
+  color: #232121;
+}/*# sourceMappingURL=properties.css.map */

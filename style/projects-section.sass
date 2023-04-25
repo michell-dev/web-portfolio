@@ -1,0 +1,480 @@
+@import 'viewports.scss'
+@import 'properties.sass' 
+
+.projects-wrapper
+    position: absolute
+    display: block
+    top: 2160px
+    left: 0
+    width: 100vw
+    height: 100vh
+
+    @include media("<=1366px")
+        top: 1536px
+
+    @include media(">=1930px")
+        top: 4320px
+
+    @include media("<=430px")
+        top: 1120px
+
+    .projects-box        
+        position: absolute
+        width: 849px
+        height: 1650px
+
+        top: 600px
+        left: 0
+        bottom: 0
+        right: 0
+        margin: auto
+
+        @include media("<=1366px")
+            width: calc(849px / 1.5)
+            height: calc(1650px / 1.5)
+
+            top: calc( 600px / 1.5)
+
+        @include media(">=1930px")
+            width: calc(849px * 2)
+            height: calc(1650px * 2)
+
+            top: calc( 600px * 2)
+
+        @include media("<=430px")
+            width: calc(849px / 2)
+            height: calc(1650px / 2)
+
+            top: calc( 600px / 2)
+
+    #projects-hero-text
+        position: absolute
+        width: 414px
+        height: 67px
+        left: 145px
+        
+
+        font-style: normal
+        font-weight: 700
+        font-size: 40px
+        line-height: 48px
+
+        text-align: center
+
+        @include media("<=1366px")
+            width: calc(414px / 1.5)
+            height: calc(67px / 1.5)
+            left: calc(145px / 1.5)
+
+            font-size: calc( 40px / 1.5 )
+            
+        @include media(">=1930px")
+            width: calc(414px * 2)
+            height: calc(67px * 2)
+            left: calc(145px * 2)
+
+            font-size: calc( 40px * 2) 
+
+        @include media("<=430px")
+            width: calc(414px / 2)
+            height: calc(67px / 2)
+            left: calc(145px / 2)
+
+            font-size: calc( 40px / 2) 
+
+    #showcase-div-01-img
+        position: absolute
+        width: 490px
+        height: 275px
+        left: 0
+        top: 200px
+
+        @include media("<=1366px")
+            width: calc(490px / 1.5)
+            height: calc(275px / 1.5)
+            top: 135px
+
+        @include media(">=1930px")
+            width: calc(490px * 2)
+            height: calc(275px * 2)
+            top: calc(200px * 2)
+
+        @include media("<=430px")
+            width: calc(490px / 2)
+            height: calc(275px / 2)
+            top: calc(200px / 2)
+
+        img
+            @include media("<=1366px")
+                width: calc(490px / 1.5)
+                height: calc(275px / 1.5)
+                top: calc(200px / 1.5)
+
+            @include media(">=1930px")
+                width: calc(490px * 2)
+                height: calc(275px * 2)
+                top: calc(200px * 2)
+
+            @include media("<=430px")
+                width: calc(490px / 2)
+                height: calc(275px / 2)
+                top: calc(200px / 2)
+
+
+    #showcase-div-02-img
+        position: absolute
+        top: 557px
+        left: 360px
+
+        @include media("<=1366px")
+            width: calc(490px / 1.5)
+            height: calc(275px / 1.5)
+            top: calc(557px / 1.5)
+            left: calc(360px / 1.5)
+
+        @include media(">=1930px")
+            width: calc(490px * 2)
+            height: calc(275px * 2)
+            top: calc(557px * 2)
+            left: calc(360px * 2)
+
+        @include media("<=430px")
+            width: calc(490px / 2)
+            height: calc(275px / 2)
+            top: calc(557px / 2)
+            left: calc(360px / 2)
+
+        img
+            @include media("<=1366px")
+                width: calc(490px / 1.5)
+                height: calc(275px / 1.5)
+                top: calc(145px / 1.5)
+
+            @include media(">=1930px")
+                width: calc(490px * 2)
+                height: calc(275px * 2)
+                top: calc(145px * 2)  
+
+            @include media("<=430px")  
+                width: calc(490px / 2)
+                height: calc(275px / 2)
+                top: calc(145px / 2)  
+
+    #showcase-div-03-img
+        position: absolute
+        top: 955px
+        left: 0px
+
+        @include media("<=1366px")
+            width: calc(490px / 1.5)
+            height: calc(275px / 1.5)
+            top: calc(955px / 1.5)
+
+        @include media(">=1930px")
+            width: calc(490px * 2)
+            height: calc(275px * 2)
+            top: calc(955px * 2)
+
+        @include media("<=430px") 
+            width: calc(490px / 2)
+            height: calc(275px / 2)
+            top: calc(955px / 2)
+
+        img
+            @include media("<=1366px")
+                width: calc(490px / 1.5)
+                height: calc(275px / 1.5)
+                top: calc(955px / 1.5)
+
+            @include media(">=1930px")
+                width: calc(490px * 2)
+                height: calc(275px * 2)
+                top: calc(955px * 2)
+
+            @include media("<=430px") 
+                width: calc(490px / 2)
+                height: calc(275px / 2)
+                top: calc(955px / 2)
+
+    #showcase-div-04-img
+        position: absolute
+        top: 1350px
+        left: 360px
+
+        @include media("<=1366px")
+            width: calc(490px / 1.5)
+            height: calc(275px / 1.5)
+            top: calc(1350px / 1.5)
+            left: calc(360px / 1.5)
+
+        @include media(">=1930px")
+            width: calc(490px * 2)
+            height: calc(275px * 2)
+            top: calc(1350px * 2)
+            left: calc(360px * 2)
+
+        @include media("<=430px") 
+            width: calc(490px / 2)
+            height: calc(275px / 2)
+            top: calc(1350px / 2)
+            left: calc(360px / 2)
+
+        img
+            @include media("<=1366px")
+                width: calc(490px / 1.5)
+                height: calc(275px / 1.5)
+
+            @include media(">=1930px")
+                width: calc(490px * 2)
+                height: calc(275px * 2)
+
+            @include media("<=430px")           
+                width: calc(490px / 2)
+                height: calc(275px / 2)
+
+    #showcase-div-01-info , #showcase-div-02-info, #showcase-div-03-info, #showcase-div-04-info
+        position: absolute
+        width: 380px
+        height: 173px
+        left: 470px
+        top: 250px
+
+        background: rgba(255, 255, 255, 0.3)
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        backdrop-filter: blur(22.5px)
+
+        /* Note: backdrop-filter has minimal browser support */
+        border-radius: 5px
+
+        @include media("<=1366px")
+            width: calc(380px / 1.5)
+            height: calc(173px / 1.5)
+            left: calc(470px / 1.5)
+            top: calc(250px / 1.5)
+            border-radius: calc(5px / 1.5)
+
+        @include media(">=1930px")
+            width: calc(380px * 2)
+            height: calc(173px * 2)
+            left: calc(470px * 2)
+            top: calc(250px * 2)
+            border-radius: calc(5px * 2)
+
+        @include media("<=430px")
+            width: calc(380px / 2)
+            height: calc(173px / 2)
+            left: calc(470px / 2)
+            top: calc(250px / 2)
+            border-radius: calc(5px / 2)
+
+    #showcase-div-02-info
+        left: 0px
+        top: 600px
+
+        @include media("<=1366px")
+            top: calc(600px / 1.5) 
+
+        @include media(">=1930px")       
+            top: calc(600px * 2) 
+
+        @include media("<=430px")
+            top: calc(600px / 2)
+
+    #showcase-div-03-info
+        left: 470px
+        top: 1010px
+
+        @include media("<=1366px")
+            top: calc(1010px / 1.5)      
+            left: calc(470px / 1.5)
+
+        @include media(">=1930px") 
+            top: calc(1010px * 2)      
+            left: calc(470px * 2)
+
+        @include media("<=430px")
+            top: calc(1010px / 2)      
+            left: calc(470px / 2) 
+      
+    #showcase-div-04-info
+        left: 0px
+        top: 1400px
+
+        @include media("<=1366px")
+            top: calc(1400px / 1.5)
+
+        @include media(">=1930px")    
+            top: calc(1400px * 2)
+
+        @include media("<=430px")
+            top: calc(1400px / 2)
+
+    #showcase-text-01 , #showcase-text-02, #showcase-text-03, #showcase-text-04
+        position: absolute
+        width: 250px
+        height: 31px
+        left: 20px
+        top: 20px
+
+        font-style: normal
+        font-weight: 700
+        font-size: 20px
+        line-height: 24px
+
+        @include media("<=1366px")
+            width: calc(250px / 1.5)
+            height: calc(31px / 1.5)
+            left: calc(20px / 1.5)
+            top: calc(20px / 1.5)
+
+            font-size: calc( 20px/ 1.5)
+            line-height: calc(24px/ 1.5)
+
+        @include media(">=1930px")
+            width: calc(250px * 2)
+            height: calc(31px * 2)
+            left: calc(20px * 2)
+            top: calc(20px * 2)
+
+            font-size: calc( 20px * 2)
+            line-height: calc(24px * 2)  
+
+        @include media("<=430px")
+            width: calc(250px / 2)
+            height: calc(31px / 2)
+            left: calc(20px / 2)
+            top: calc(20px / 2)
+
+            font-size: calc( 20px / 2)
+            line-height: calc(24px / 2)
+
+    #showcase-p-01 , #showcase-p-02 , #showcase-p-03, #showcase-p-04
+        position: absolute
+        width: 340px
+        height: 59px
+        left: 20px
+        top: 50px
+
+        font-style: normal
+        font-weight: 400
+        font-size: 15px
+        line-height: 120%
+
+        /* or 18px */
+        letter-spacing: 0.1em
+
+        @include media("<=1366px")
+            width: calc(340px / 1.5)
+            height: calc(59px / 1.5)
+            left: calc(20px / 1.5)
+            top: calc(50px / 1.5)
+
+            font-size: calc( 15px/ 1.5)
+            line-height: calc(24px/ 1.5)
+
+        @include media(">=1930px")
+            width: calc(340px * 2)
+            height: calc(59px * 2)
+            left: calc(20px * 2)
+            top: calc(50px * 2)
+
+            font-size: calc( 15px * 2)
+            line-height: calc(24px * 2)
+
+        @include media("<=430px")
+            width: calc(340px / 2)
+            height: calc(59px / 2)
+            left: calc(20px / 2)
+            top: calc(50px / 2)
+
+            font-size: calc( 15px / 2)
+            line-height: calc(24px / 2)
+   
+    #github-btn-01 
+        position: absolute
+        left: 20px
+        top: 130px
+
+        @include media("<=1366px")
+            width: calc(20px / 1.5)
+            height: calc(20px / 1.5)
+            left: calc(20px / 1.5)
+            top: calc(130px / 1.4)
+
+        @include media(">=1930px")
+            width: calc(20px * 2)
+            height: calc(20px * 2)
+            left: calc(20px * 2)
+            top: calc(130px * 2.2)
+
+        @include media("<=430px")
+            width: calc(20px / 2)
+            height: calc(20px / 2)
+            left: calc(20px / 2)
+            top: calc(130px / 1.8)
+
+    #github-span-01
+        position: absolute
+        left: 50px
+        top: 132px
+
+        @include media("<=1366px")
+            left: calc(50px / 1.5)
+            top: calc(132px / 1.4)
+            font-size: 10px
+        
+        @include media(">=1930px")
+            left: calc(50px * 2)
+            top: calc(132px * 2.2)
+            font-size: 30px
+
+        @include media("<=430px")
+            left: calc(50px / 2)
+            top: calc(132px / 1.8)
+            font-size: 5px
+
+    #live-web-btn-01
+        width: 20px
+        height: 20px
+        position: absolute
+        left: 160px
+        top: 130px
+
+        @include media("<=1366px")
+            width: calc(20px / 1.5)
+            height: calc(20px / 1.5)
+            left: calc(160px / 1.5)
+            top: calc(130px / 1.4)
+
+        @include media(">=1930px")
+            width: calc(20px * 2)
+            height: calc(20px * 2)
+            left: calc(160px * 2)
+            top: calc(130px * 2.2)
+
+        @include media("<=430px")
+            width: calc(20px / 2)
+            height: calc(20px / 2)
+            left: calc(160px / 2)
+            top: calc(130px / 1.8)
+
+
+    #web-span-01
+        position: absolute
+        left: 185px
+        top: 132px
+
+        @include media("<=1366px")
+            left: calc(185px / 1.5)
+            top: calc(132px / 1.4)
+            font-size: 10px
+
+        @include media(">=1930px")
+            left: calc(185px * 2)
+            top: calc(132px * 2.2)
+            font-size: 30px
+
+        @include media("<=430px")
+            left: calc(185px / 2)
+            top: calc(132px /1.8)
+            font-size: 5px
